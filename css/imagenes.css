@@ -256,3 +256,6 @@ padding: 5rem 0 0 0 ;
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
     padding-top: 100px; 
 }
+.biblio{
+    padding: 6rem 3rem 0 3rem; 
+}
