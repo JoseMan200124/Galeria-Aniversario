@@ -1,0 +1,340 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300|Roboto:400,100,300);
+
+* {
+	margin: 0;
+		font-family: 'Oswald', sans-serif;
+
+}
+#loader{
+    position: fixed;
+    width: 100%; 
+    height: 100vh; 
+    z-index: 100; 
+    overflow: visible; 
+    background: #E5EFF1 url('img/loader.gif') no-repeat center center; 
+}
+
+#nav-background {
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	margin-top: -100%;
+}
+
+#mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 0;
+	opacity: 0;
+}
+#landing{
+     transition: opacity 2s ease;
+}
+#landing2{
+     transition: opacity 2s ease;
+}
+
+#landing {
+	height: 100vh;
+	background-image: url("https://i.ibb.co/ZTpvqTR/P1160637.jpg");
+	background-size: cover;
+	background-position: center 0;
+	position: fixed;
+    opacity: 0;  
+	width: 100%;
+}
+
+#landing #slogan {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-size: 100pt;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#landing #vignette {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: url(http://deidhrafaheyphotography.com/wp-content/uploads/2013/01/Vignette.png);
+	background-size: cover;
+	background-position: center;
+}
+#landing2 {
+	height: 100vh;
+	background-image: url("https://i.ibb.co/PTRHDHX/Catedral.jpg");
+	background-size: cover;
+	background-position: center 0;
+	position: fixed;
+    opacity: 1; 
+	width: 100%;
+}
+
+#landing2 #slogan2 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-size: 100pt;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#landing2 #vignette2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: url(http://deidhrafaheyphotography.com/wp-content/uploads/2013/01/Vignette.png);
+	background-size: cover;
+	background-position: center;
+}
+#body {
+	position: relative;
+	top: 100vh;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 40px 10% 0 ;
+}
+
+#slide-1-img {
+	height: 400px;
+	float: right;
+	position: relative;
+}
+
+#slide-2-img {
+	height: 600px;
+	float: left;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#div-1 {
+	margin: 50px -12.5% 0 0;
+	height: 400px;
+}
+
+#div-2 {
+	margin: 0 -10% 0 -12.5%;
+	height: 600px;
+}
+
+.caption {
+	text-align: center;
+	color: grey;
+	font-size: 15pt;
+	padding: 10pt 0;
+}
+
+.ignore-padding {
+	margin: 0 -12.5%;
+}
+
+div[class=ignore-padding] {
+	overflow: hidden;
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.floor-example {
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.floor-boss-level {
+	font-family: "Oswald";
+	background: black;
+	padding: 10px;
+}
+
+#floor-example-1 {
+	background-image: url("http://vignette1.wikia.nocookie.net/swordartonline/images/4/4c/SAO_environment.png/revision/latest?cb=20140308104916");
+	background-position: left center;
+}
+
+#floor-example-2 {
+	background-image: url("http://vignette2.wikia.nocookie.net/swordartonline/images/2/2d/22nd_Floor.png/revision/latest?cb=20140414052133");
+	background-position: right center;
+}
+
+#floor-boss-example-1 {
+	background-image: url("https://31.media.tumblr.com/tumblr_mbr5n4TMrp1rsxn5po1_500.gif");
+}
+
+#floor-boss-example-2 {
+	background-image: url("https://38.media.tumblr.com/tumblr_mdbr1inoTq1qm04xro8_r1_500.gif");
+}
+
+#floor-boss-example-3 {
+	background-image: url("https://33.media.tumblr.com/tumblr_mb4qphjUoq1rbtx3po2_500.gif");
+}
+
+@media screen and (max-width: 870px){
+	#slide-1-img {
+		display: none;
+	}
+	
+	#div-1 {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 740px){
+	h1 {
+		font-size: 50pt;
+	}
+    #landing2 #slogan2 {
+	
+	font-size: 60pt;
+
+
+}
+	
+    #landing #slogan {
+	
+	font-size: 60pt;
+
+
+}
+	h1:nth-child(1) {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	#slide-2-img {
+		display: none;
+	}
+	
+	#div-2 {
+		margin: 0;
+	}
+}
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 7px;
+    border-width: 2px 5px;
+    border-style: solid;
+    border-color: #f9f9f9;
+    background: #252525;
+}
+::-webkit-scrollbar-thumb {
+    height: 12px;
+    border: 4px solid #f9f9f9;
+    background: #BD994D;
+}
+
+
+.navbar {
+    		font-family: 'Oswald', sans-serif;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+    		font-family: 'Oswald', sans-serif;
+
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+    		font-family: 'Oswald', sans-serif;
+
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+.yellow{
+    color: #FFE42F; 
+}
+.titulo:hover{
+    color: #ccc; 
+}
