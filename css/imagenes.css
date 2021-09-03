@@ -205,6 +205,7 @@ padding: 5rem 0 0 0 ;
   }
 }
 
+
 .navbar {
   position: fixed;
   top: 0;
@@ -336,4 +337,9 @@ padding: 5rem 0 0 0 ;
 }
 .cambio24{
     width: 1000.656px!important; 
+}
+@media screen and (min-width: 1300px){
+    .cambio9{
+        width: 894.656px!important; 
+    }
 }
